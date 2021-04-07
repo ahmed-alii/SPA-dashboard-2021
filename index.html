@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/devices.css">
     <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>SPA Dashboard</title>
 </head>
 <body>
@@ -18,29 +22,135 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home</a>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        Proxies
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="nav-link" href="#" id="proxies-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">Proxies</a>
+                    <div class="dropdown-menu" aria-labelledby="proxies-dropdown">
+                        <a class="dropdown-item" href="#">Basic</a>
+                        <a class="dropdown-item" href="#">Fresh</a>
+                        <a class="dropdown-item" href="#">Premium</a>
+                        <a class="dropdown-item" href="#">ISP</a>
+                        <a class="dropdown-item" href="#">Elite</a>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Purchase</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="settings-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">Settings</a>
+                    <div class="dropdown-menu" aria-labelledby="settings-dropdown-dropdown">
+                        <a class="dropdown-item" href="#">Language</a>
+                        <a class="dropdown-item" href="#">Theme</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#logout">Logout</a>
                 </li>
             </ul>
 
         </div>
     </nav>
 </header>
+<main class="container">
+    <div class="welcome">
+        <h2>Welcome, User-name</h2>
+    </div>
+    <div class="dash">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <h3 class="box-h">Sneaker Releases</h3>
+                    <div class="box-item-list">
+                        <div class="box-item row" data-aos="fade-right">
+                            <div class="col-2 p-0 d-flex align-items-center justify-content-center">
+                                <img src="https://via.placeholder.com/50x50" alt="">
+                            </div>
+                            <div class="col-10 d-flex align-items-center">
+                                <div class="d-block w-100">
+                                    <h4>New Sneaker Release.</h4>
+                                    <div class="box-list-item-content d-flex justify-content-between">
+                                        <div class="launch-time"><i class="fa fa-rocket"></i>
+                                            <span>tomorrow 9:00 EST</span></div>
+                                        <div class="launch-location"><i class="fa fa-map-marker"></i>
+                                            <span>Canada</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-item row" data-aos="fade-right">
+                            <div class="col-2 p-0 d-flex align-items-center justify-content-center">
+                                <img src="https://via.placeholder.com/50x50" alt="">
+                            </div>
+                            <div class="col-10 d-flex align-items-center">
+                                <div class="d-block w-100">
+                                    <h4>New Sneaker Release.</h4>
+                                    <div class="box-list-item-content d-flex justify-content-between">
+                                        <div class="launch-time"><i class="fa fa-rocket"></i>
+                                            <span>tomorrow 9:00 EST</span></div>
+                                        <div class="launch-location"><i class="fa fa-map-marker"></i>
+                                            <span>Canada</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex flex-column justify-content-between h-100">
+                    <div class="box-sm" >
+                        <h3 class="box-h">Purchase Plan</h3>
+                        <p>Browse our different plans for all your needs.</p>
+                        <a href="#" class="btn btn-success border-0">Explore</a>
+                    </div>
+                    <div class="box-sm">
+                        <h3 class="box-h">Need help?</h3>
+                        <p>Get in touch with us and get
+                            answers to all your questions.</p>
+                        <a href="#" class="btn btn-danger border-0">Join discord</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <h3 class="box-h">Announcements</h3>
+                    <div class="box-item-list">
+                        <div class="box-item" data-aos="fade-left">
+                            <div class="d-flex align-items-center">
+                                <div class="d-block w-100">
+                                    <h4><i class="fa fa-circle mr-2 small err-clr"></i> Important Update Issue</h4>
+                                    <div class="box-list-item-content">
+                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                                            cum delectus dolor eum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

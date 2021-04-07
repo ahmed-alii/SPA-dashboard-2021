@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/devices.css">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>SPA Dashboard</title>
+</head>
+<body>
+<header class="container">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="#"><img src="public/assets/logo.svg" alt="spa proxies"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="proxies-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">Proxies</a>
+                    <div class="dropdown-menu" aria-labelledby="proxies-dropdown">
+                        <a class="dropdown-item" href="#">Basic</a>
+                        <a class="dropdown-item" href="#">Fresh</a>
+                        <a class="dropdown-item" href="#">Premium</a>
+                        <a class="dropdown-item" href="#">ISP</a>
+                        <a class="dropdown-item" href="#">Elite</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Purchase</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="settings-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">Settings</a>
+                    <div class="dropdown-menu" aria-labelledby="settings-dropdown-dropdown">
+                        <a class="dropdown-item" href="#">Language</a>
+                        <a class="dropdown-item" href="#">Theme</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#logout">Logout</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <div class="dash">
+        <div class="package-selector text-center">
+            <ul class="nav nav-pills nav-justified mb-3" id="purchase-tab" role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active mx-auto" id="p1" data-toggle="pill" href="#pills-residential" role="tab">
+                        <div class="pricing-tab-nav">
+                            <h5>Residential</h5>
+                            <span>Starting from $199/month</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link mx-auto" id="p2" data-toggle="pill" href="#pills-virgin" role="tab">
+                        <div class="pricing-tab-nav">
+                            <h5>Virgin ISPs</h5>
+                            <span>Starting from $199/month</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link mx-auto" id="p3" data-toggle="pill" href="#pills-bulk" role="tab">
+                        <div class="pricing-tab-nav">
+                            <h5>Bulk ISPs</h5>
+                            <span>Starting from $199/month</span>
+                        </div>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-residential" role="tabpanel">
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <div class="pricing-card">
+                            <h2 class="pricing-h">Basic</h2>
+                            <h3 class="pricing-amount">$3.99/gb</h3>
+                            <ul class="pricing-f-list list-unstyled">
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn btn-success border-0">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="pricing-card">
+                            <h2 class="pricing-h">Basic</h2>
+                            <h3 class="pricing-amount">$3.99/gb</h3>
+                            <ul class="pricing-f-list list-unstyled">
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn btn-success border-0">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="pricing-card">
+                            <h2 class="pricing-h">Basic</h2>
+                            <h3 class="pricing-amount">$3.99/gb</h3>
+                            <ul class="pricing-f-list list-unstyled">
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn btn-success border-0">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="pricing-card">
+                            <h2 class="pricing-h">Basic</h2>
+                            <h3 class="pricing-amount">$3.99/gb</h3>
+                            <ul class="pricing-f-list list-unstyled">
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn btn-success border-0">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-virgin" role="tabpanel">
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <div class="pricing-card">
+                            <h2 class="pricing-h">Virgin</h2>
+                            <h3 class="pricing-amount">$3.99/gb</h3>
+                            <ul class="pricing-f-list list-unstyled">
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn btn-success border-0">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="pricing-card">
+                            <h2 class="pricing-h">Basic</h2>
+                            <h3 class="pricing-amount">$3.99/gb</h3>
+                            <ul class="pricing-f-list list-unstyled">
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn btn-success border-0">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="pricing-card">
+                            <h2 class="pricing-h">Basic</h2>
+                            <h3 class="pricing-amount">$3.99/gb</h3>
+                            <ul class="pricing-f-list list-unstyled">
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn btn-success border-0">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="pricing-card">
+                            <h2 class="pricing-h">Basic</h2>
+                            <h3 class="pricing-amount">$3.99/gb</h3>
+                            <ul class="pricing-f-list list-unstyled">
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn btn-success border-0">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-bulk" role="tabpanel">
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <div class="pricing-card">
+                            <h2 class="pricing-h">bulk</h2>
+                            <h3 class="pricing-amount">$3.99/gb</h3>
+                            <ul class="pricing-f-list list-unstyled">
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn btn-success border-0">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="pricing-card">
+                            <h2 class="pricing-h">Basic</h2>
+                            <h3 class="pricing-amount">$3.99/gb</h3>
+                            <ul class="pricing-f-list list-unstyled">
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn btn-success border-0">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="pricing-card">
+                            <h2 class="pricing-h">Basic</h2>
+                            <h3 class="pricing-amount">$3.99/gb</h3>
+                            <ul class="pricing-f-list list-unstyled">
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn btn-success border-0">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="pricing-card">
+                            <h2 class="pricing-h">Basic</h2>
+                            <h3 class="pricing-amount">$3.99/gb</h3>
+                            <ul class="pricing-f-list list-unstyled">
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                                <li><i class="fas fa-check"></i> Some details here</li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a href="#" class="btn btn-success border-0">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
