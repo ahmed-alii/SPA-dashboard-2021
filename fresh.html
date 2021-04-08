@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/devices.css">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>SPA Dashboard</title>
+</head>
+<body>
+<header class="container">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="#"><img src="public/assets/logo.svg" alt="spa proxies"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="proxies-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">Proxies</a>
+                    <div class="dropdown-menu" aria-labelledby="proxies-dropdown">
+                        <a class="dropdown-item" href="#">Basic</a>
+                        <a class="dropdown-item" href="#">Fresh</a>
+                        <a class="dropdown-item" href="#">Premium</a>
+                        <a class="dropdown-item" href="#">ISP</a>
+                        <a class="dropdown-item" href="#">Elite</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Purchase</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="settings-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">Settings</a>
+                    <div class="dropdown-menu" aria-labelledby="settings-dropdown-dropdown">
+                        <a class="dropdown-item" href="#">Language</a>
+                        <a class="dropdown-item" href="#">Theme</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#logout">Logout</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <div class="dash">
+        <div class="overview row">
+            <div class="col-4">
+                <div class="package-name top-boxes">
+                    <h2>SPA Fresh Proxies</h2>
+                    <a href="#" class="success-clr upgrade-btn"><i class="fa fa-shopping-bag mr-2"></i> Upgrade Plan</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="data-usage top-boxes">
+                    <h2>Data Usage</h2>
+                    <h3>25GB <sub>/50gb</sub></h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="time-remaining top-boxes">
+                    <h2>Time Remaining</h2>
+                    <h3>April 02, 2021</h3>
+                    <p class="err-clr">2 days remaining.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="generate bottom-box">
+                    <h2>Generate Proxies</h2>
+                    <br>
+                    <form action="#" method="post">
+                        <select name="region" id="pool" class="form-control generate-select">
+                            <option value="3" selected disabled>Select Region / Pool</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                        <select name="wty" id="qty" class="form-control generate-select">
+                            <option value="3" selected disabled>Select Quantity</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                        <button class="btn btn-success btn-block border-0">Generate</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="generate bottom-box">
+                    <h2>Proxies</h2>
+                    <br>
+                    <textarea id="generated-proxies" rows="9" readonly></textarea>
+                    <div class="d-flex justify-content-center my-3">
+                        <button class="btn btn-success border-0 mx-4"><i class="fa fa-copy mr-2"></i>Copy</button>
+                        <button class="btn btn-danger border-0 mx-4"><i class="fa fa-eraser mr-2"></i>Clear</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="generate bottom-box auth">
+                    <h2>Auth & Config</h2>
+                    <label for="ip-binded">IP Binded</label>
+                    <input type="text" id="ip-binded" class="form-control generate-select" placeholder="192.168.10.10">
+
+                    <label for="ip-speed">Speed</label>
+                    <input type="text" id="ip-speed" class="form-control generate-select" placeholder="99999 MBPS">
+
+                    <label for="ip-rotation">Rotation Time</label>
+                    <input type="text" id="ip-rotation" class="form-control generate-select" placeholder="999 Hrs">
+
+                    <button class="btn btn-success btn-block border-0" data-toggle="modal" data-target="#ipauthmodal">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--&lt;!&ndash;Auth & Coonfig&ndash;&gt;-->
+<!--<div class="modal fade" id="ipauthmodal" tabindex="-1" role="dialog">-->
+<!--    <div class="modal-dialog modal-dialog-centered" role="document">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true" class="text-white">&times;</span>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                ...-->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--                <button type="button" class="btn btn-primary">Save changes</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

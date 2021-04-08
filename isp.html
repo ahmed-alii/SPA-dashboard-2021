@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/devices.css">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
+
+    <title>SPA Dashboard</title>
+</head>
+<body>
+<header class="container">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="#"><img src="public/assets/logo.svg" alt="spa proxies"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="proxies-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">Proxies</a>
+                    <div class="dropdown-menu" aria-labelledby="proxies-dropdown">
+                        <a class="dropdown-item" href="#">Basic</a>
+                        <a class="dropdown-item" href="#">Fresh</a>
+                        <a class="dropdown-item" href="#">Premium</a>
+                        <a class="dropdown-item" href="#">ISP</a>
+                        <a class="dropdown-item" href="#">Elite</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Purchase</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="settings-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">Settings</a>
+                    <div class="dropdown-menu" aria-labelledby="settings-dropdown-dropdown">
+                        <a class="dropdown-item" href="#">Language</a>
+                        <a class="dropdown-item" href="#">Theme</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#logout">Logout</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <div class="dash">
+        <div class="overview row">
+            <div class="col-3">
+                <div class="package-name top-boxes">
+                    <h2>ISP Proxies</h2>
+                    <a href="#" class="success-clr upgrade-btn"><i class="fa fa-shopping-bag mr-2"></i> Upgrade Plan</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="isp-table">
+                    <table class="table table-sm table-borderless text-light">
+                        <thead class="table-light table-isp-head">
+                        <tr>
+                            <th>#</th>
+                            <th>Plan</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Pricing</th>
+                            <th>Status</th>
+                            <th>Auth Mode</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Basic</td>
+                            <td>23-02-2021</td>
+                            <td>23-02-2021</td>
+                            <td>$99.9</td>
+                            <td>Active</td>
+                            <td><input type="checkbox" checked data-toggle="toggle" data-size="xs" data-on="none" data-off="auth"></td>
+                            <td><a href="#" class="success-clr export-btn">Export <i class="fa fa-arrow-right"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Basic</td>
+                            <td>23-02-2021</td>
+                            <td>23-02-2021</td>
+                            <td>$99.9</td>
+                            <td>Active</td>
+                            <td><input type="checkbox" data-toggle="toggle" data-size="xs" data-on="none" data-off="auth"></td>
+                            <td><a href="#" class="success-clr export-btn">Export <i class="fa fa-arrow-right"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Basic</td>
+                            <td>23-02-2021</td>
+                            <td>23-02-2021</td>
+                            <td>$99.9</td>
+                            <td>Active</td>
+                            <td><input type="checkbox" checked data-toggle="toggle" data-size="xs" data-on="none" data-off="auth"></td>
+                            <td><a href="#" class="success-clr export-btn">Export <i class="fa fa-arrow-right"></i></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
